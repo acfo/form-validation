@@ -1,0 +1,40 @@
+{
+  "name": "acfo/form-validation",
+  "description": "Form validation",
+  "keywords": ["form", "validation", "strict"],
+  "homepage": "https://github.com/acfo/form-validation",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrew Forster",
+      "email": "ac@forster.io"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/acfo/form-validation/issues",
+    "source": "https://github.com/acfo/form-validation"
+  },
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "2.*",
+    "phpunit/phpunit": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Acfo\\Validation\\Form\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Acfo\\Validation\\Form\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --verbose --coverage-text",
+    "sniff": "vendor/bin/phpcs --standard=PSR2 --extensions=php src tests",
+    "fix": "vendor/bin/phpcbf --standard=PSR2 --extensions=php src tests"
+  }
+}
