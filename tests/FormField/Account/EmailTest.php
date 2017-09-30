@@ -9,7 +9,8 @@ use Acfo\Validation\Form\Tests\FormField\FormFieldTestCase;
 
 class EmailTest extends FormFieldTestCase
 {
-    protected function getSut(): FormField {
+    protected function getSut(): FormField
+    {
         return new Email();
     }
 
@@ -17,7 +18,7 @@ class EmailTest extends FormFieldTestCase
     {
         return [
             ['12'], // too short
-            [ str_repeat('1', 255) ], // too long
+            [str_repeat('1', 255)], // too long
             ['!'],
             ['"'],
             ['§'],

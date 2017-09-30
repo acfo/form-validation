@@ -5,20 +5,10 @@ namespace Acfo\Validation\Form\Tests;
 
 use Acfo\Validation\Form\Form;
 use Acfo\Validation\Form\FormField\Error;
-use Acfo\Validation\Form\FormField\FormField;
 use Acfo\Validation\Form\FormField\FormFieldImpl;
 use Acfo\Validation\Form\FormField\Number;
 use Acfo\Validation\Form\FormField\Requirement;
-use Acfo\Validation\Form\FormImpl;
 use PHPUnit\Framework\TestCase;
-
-class TestForm implements Form
-{
-    use FormImpl;
-
-    public $property;
-}
-
 
 class FormImplTest extends TestCase
 {
@@ -82,5 +72,4 @@ class FormImplTest extends TestCase
         $this->assertFalse($actual);
         $this->assertEquals(Error::INVALID, $this->property->getError());
     }
-
 }

@@ -6,12 +6,6 @@ namespace Acfo\Validation\Form\Tests\FormField;
 use Acfo\Validation\Form\FormField\ConstListItem;
 use Acfo\Validation\Form\FormField\FormField;
 
-class TestConstList
-{
-    public const FOO = 'foo';
-    public const BAR = 'bar';
-}
-
 class ConstListItemTest extends FormFieldTestCase
 {
     protected function getSut(): FormField

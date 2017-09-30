@@ -29,13 +29,15 @@ class FormFieldImplTest extends TestCase
         $this->assertEquals(Error::NONE, $actual);
     }
 
-    public function testGetRequiredWithDefaultShouldReturnRequirementOptional() {
+    public function testGetRequiredWithDefaultShouldReturnRequirementOptional()
+    {
         $actual = $this->getSut()->getRequired();
 
         $this->assertEquals(Requirement::OPTIONAL, $actual);
     }
 
-    public function testSetError() {
+    public function testSetError()
+    {
         $sut = $this->getSut();
         $expected = Error::INVALID;
         $sut->setError($expected);
@@ -44,13 +46,15 @@ class FormFieldImplTest extends TestCase
         $this->assertEquals($expected, $actual);
     }
 
-    public function testSetErrorWithInvalidValueShouldThrowInvalidArgumentException() {
+    public function testSetErrorWithInvalidValueShouldThrowInvalidArgumentException()
+    {
         $this->expectException(\InvalidArgumentException::class);
 
         $this->getSut()->setError('foobar');
     }
 
-    public function testSetRequired() {
+    public function testSetRequired()
+    {
         $sut = $this->getSut();
         $expected = Requirement::REQUIRED;
         $sut->setRequired($expected);
@@ -59,7 +63,8 @@ class FormFieldImplTest extends TestCase
         $this->assertEquals($expected, $actual);
     }
 
-    public function testSetRequiredWithInvalidValueShouldThrowInvalidArgumentException() {
+    public function testSetRequiredWithInvalidValueShouldThrowInvalidArgumentException()
+    {
         $this->expectException(\InvalidArgumentException::class);
 
         $this->getSut()->setRequired('foobar');

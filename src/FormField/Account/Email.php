@@ -11,7 +11,6 @@ use Acfo\Validation\Form\FormField\Error;
 use Acfo\Validation\Form\FormField\Requirement;
 use Acfo\Validation\Form\FormField\Text;
 
-
 /**
  * Email
  *

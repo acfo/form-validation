@@ -7,7 +7,7 @@ interface Form
 {
     /**
      * @param array $formData
-     * 
+     *
      * @return bool
      */
     public function validate(array $formData): bool;

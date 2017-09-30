@@ -60,9 +60,11 @@ trait FormImpl
                 $property->setError(Error::MISSING);
                 return false;
             }
-        } else if (!$property->isValid($formData[$propertyName])) {
-            $property->setError(Error::INVALID);
-            return false;
+        } else {
+            if (!$property->isValid($formData[$propertyName])) {
+                $property->setError(Error::INVALID);
+                return false;
+            }
         }
         return true;
     }

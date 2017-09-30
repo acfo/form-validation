@@ -9,7 +9,8 @@ use Acfo\Validation\Form\Tests\FormField\FormFieldTestCase;
 
 class CityTest extends FormFieldTestCase
 {
-    protected function getSut(): FormField {
+    protected function getSut(): FormField
+    {
         return new City();
     }
 
