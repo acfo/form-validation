@@ -11,7 +11,7 @@ class City extends Text
 {
     // CITY_REGEX should match any european city,
     // e.g. "St. Germaine/Untererding, am Speier"
-    private const CITY_REGEX = '^(?!\s*$)[\w\xC0-\xD6\xD8-\xF6\xF8-\xFF\s\-\.\,\'\s\/]+$';
+    private const CITY_REGEX = '^[\w\xC0-\xD6\xD8-\xF6\xF8-\xFF\s\-\.\,\'\/]+$';
 
     /**
      * City constructor.

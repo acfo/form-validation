@@ -9,7 +9,7 @@ use Acfo\Validation\Form\FormField\Text;
 
 class SearchString extends Text
 {
-    const SEARCH_STRING_REGEX = '^(?!\s*$)[\w\xC0-\xD6\xD8-\xF6\xF8-\xFF\s\-\.\,\'\s\/#\d]*$';
+    const SEARCH_STRING_REGEX = '^[\w\xC0-\xD6\xD8-\xF6\xF8-\xFF\s\-\.\,\'\/#\d]*$';
 
     /**
      * SearchString constructor.

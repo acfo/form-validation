@@ -9,7 +9,7 @@ use Acfo\Validation\Form\FormField\Text;
 
 class Password extends Text
 {
-    const PASSWORD_REGEX = '^(?!\s*$)[\w\xC0-\xD6\xD8-\xF6\xF8-\xFF\-\.\'\!\$\%\&\?\#\d ]*$';
+    const PASSWORD_REGEX = '^[\w\xC0-\xD6\xD8-\xF6\xF8-\xFF\-\.\'\!\$\%\&\?\#\d ]*$';
 
     /**
      * Password constructor.

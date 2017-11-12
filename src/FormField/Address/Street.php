@@ -11,7 +11,7 @@ class Street extends Text
 {
     // STREET_REGEX should match any european street or house name,
     // e.g. "12 Rue St Germaine", #10 Downing str", "Mustr. 12a-d", "The Darling Cottage"
-    private const STREET_REGEX = '^(?!\s*$)[\w\xC0-\xD6\xD8-\xF6\xF8-\xFF\s\-\.\,\'\s\/#\d]*$';
+    private const STREET_REGEX = '^[\w\xC0-\xD6\xD8-\xF6\xF8-\xFF\s\-\.\,\'\/#\d]*$';
 
     /**
      * Street constructor.

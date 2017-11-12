@@ -9,7 +9,7 @@ use Acfo\Validation\Form\FormField\Text;
 
 class Name extends Text
 {
-    private const NAME_REGEX = '^(?!\s*$)[\w\xC0-\xD6\xD8-\xF6\xF8-\xFF\-\.\' ]*$';
+    private const NAME_REGEX = '^[\w\xC0-\xD6\xD8-\xF6\xF8-\xFF\-\.\' ]*$';
 
     /**
      * Name constructor.
