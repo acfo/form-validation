@@ -18,8 +18,8 @@ use Acfo\Validation\Form\FormField\Text;
  */
 class Email extends Text
 {
-    // TODO get pattern from specification to work
-    const PATTERN_EMAIL = '[\w\-\.\+]+@([\w\-]+\.)+[\w]+';
+    // see https://www.w3.org/TR/html5/forms.html#valid-e-mail-address
+    const PATTERN_EMAIL = '^[a-zA-Z0-9.!#$%&\'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$';
 
     /**
      * Email constructor.
